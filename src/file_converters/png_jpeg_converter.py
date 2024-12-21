@@ -15,7 +15,7 @@ class PngJpegConverter(FileConverter):
             PngJpegConverter.convert_png_to_jpeg(file_path)
         else:
             raise Exception(
-                f"can only convert between {Extension.PNG.value} AND{Extension.JPEG.value}/{Extension.JPG.value} ")
+                f"can only convert between {Extension.PNG.value} AND {Extension.JPEG.value}/{Extension.JPG.value} ")
 
     @staticmethod
     def convert_png_to_jpeg(file_path):
