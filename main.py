@@ -1,4 +1,3 @@
-from src.Logs.log_types_enum import LogType
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 from src.file_converters.supported_conversions import supported_conversions
