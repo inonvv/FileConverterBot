@@ -1,0 +1,5 @@
+{
+    "message": "Unexpected error converting WEBP to SVG: 'PBM'",
+    "file_path": "./image_20250129_141537.webp",
+    "note": "here will be a logs using dictionary inside the abstract file converter"
+}

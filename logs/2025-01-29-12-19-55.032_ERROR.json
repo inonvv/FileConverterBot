@@ -1,0 +1,6 @@
+{
+    "message": "failed with converting the file",
+    "original_file_path": "./honey (2).png",
+    "new_file_path": "./honey (2).jpeg",
+    "error": "[Errno 2] No such file or directory: './honey (2).jpeg'"
+}

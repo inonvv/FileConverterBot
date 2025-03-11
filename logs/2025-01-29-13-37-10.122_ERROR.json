@@ -1,0 +1,6 @@
+{
+    "message": "failed with converting the file",
+    "original_file_path": "./image_20250129_113703.webp",
+    "new_file_path": "./image_20250129_113703.svg",
+    "error": "[Errno 2] No such file or directory: './image_20250129_113703.svg'"
+}
