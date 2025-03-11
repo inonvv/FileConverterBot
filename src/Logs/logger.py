@@ -15,7 +15,7 @@ class Logger:
     def __init__(self):
         if not hasattr(self, '_initialized'):
             self._initialized = True
-            self.root_folder_path = r"C:\Users\inon\OneDrive\שולחן העבודה\logs"
+            self.root_folder_path = r"C:\Users\inon\working-projects\logs"
 
     def set_folder_path(self, root_folder_path):
         self.root_folder_path = root_folder_path

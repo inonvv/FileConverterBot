@@ -196,23 +196,19 @@ async def handle_extension_choice(update: Update, context: ContextTypes.DEFAULT_
         # Cleanup files
         os.remove(original_file_path)
         os.remove(new_file_path)
-        log_info("sending success message to user")
 
         # Confirmation message
         await query.edit_message_text(f"File has been converted to {chosen_extension} and returned!")
-        log_info("sending success message to user--TEST")
+        log_info("sending success message to user")
     except Exception as e:
         print(e)
         await query.edit_message_text(f"An error occurred during conversion: ")
         log_error("failed with converting the file",
                   {"original_file_path": original_file_path, "new_file_path": new_file_path, "error": str(e)})
 
-
 if __name__ == '__main__':
     app = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
     app.add_handler(CommandHandler('start', start_command))
-
     app.add_handler(MessageHandler(filters.ALL, handle_message))
     app.add_handler(CallbackQueryHandler(handle_extension_choice))
-
     app.run_polling(poll_interval=3)
